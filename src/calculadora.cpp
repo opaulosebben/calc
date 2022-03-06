@@ -10,14 +10,14 @@ calculadora::soma();
 
 }
 
-calculadora::setOperando1(n[0]
+calculadora::getOperando1(n[0])
 {
-    return
+    return operando1;
 }
 
-calculadora::setOperando2(n[1])
+calculadora::getOperando2(n[1])
 {
-    return
+    return operando2;
 }
 
 

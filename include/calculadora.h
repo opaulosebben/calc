@@ -4,18 +4,23 @@
 
 class calculadora
 {
-    public:
-        calculadora();
-
-
     private:
-        setOperando1
-        setOperando2
-        soma
-        subtrai
-        multiplica
-        divide
-        getResultado
+        int operando1;
+        int operando2;
+
+
+
+    public:
+
+        void soma(int);
+        void subtrai (int);
+        void multiplica (int);
+        void divide (int);
+
+        float setOperando1(float);
+        float setOperando2(float);
+
+        float getResultado();
 };
 
 #endif // CALCULADORA_H
