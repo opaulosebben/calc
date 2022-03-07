@@ -2,29 +2,55 @@
 
 calculadora::calculadora()
 {
-    //ctor
+    operando1 = 0;
+    operando2 = 0;
+    resultado = 0;
 }
 
-calculadora::soma();
+calculadora::calculadora(float op1, float op2)
 {
-
+    setOperando1(op1);
+    setOperando2(op2);
+    resultado = 0;
 }
 
-calculadora::getOperando1(n[0])
+float calculadora::getOperando1()
 {
     return operando1;
 }
 
-calculadora::getOperando2(n[1])
+float calculadora::getOperando2()
 {
     return operando2;
 }
 
+float calculadora::getResultado()
+{
+    return resultado;
+}
 
-/*Um método chamado setOperando1 que deverá receber como parâmetro um valor float e não retorna valores
-Um método chamado setOperando2 que deverá receber como parâmetro um valor float e não retorna valores
-Um método chamado soma que não recebe  e não retorna valores
-Um método chamado subtrai que não recebe  e não retorna valores
-Um método chamado multiplica que não recebe  e não retorna valores
-Um método chamado divide que não recebe  e não retorna valores
-Um método chamado getResultado que não recebe parâmetros e retorna um valor float.*/
+void calculadora::setOperando1(float op1)
+{
+    operando1 = op1;
+}
+void calculadora::setOperando2(float op2)
+{
+    operando2 = op2;
+}
+
+void calculadora::soma()
+{
+    resultado = getOperando1() + getOperando2();
+}
+void calculadora::subtrai()
+{
+    resultado = getOperando1() - getOperando2();
+}
+void calculadora::multiplica()
+{
+    resultado = getOperando1() * getOperando2();
+}
+void calculadora::divide()
+{
+    resultado = getOperando1() / getOperando2();
+}
